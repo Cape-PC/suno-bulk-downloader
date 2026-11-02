@@ -1,0 +1,47 @@
+# --- 機密情報 ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+client_secret*.json
+service-account*.json
+secrets/
+*.secret
+
+# --- 動的データ（構造のみ維持） ---
+98_logs/*
+!98_logs/.gitkeep
+!98_logs/CLAUDE.md
+99_tmp/*
+!99_tmp/.gitkeep
+!99_tmp/CLAUDE.md
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+build/
+dist/
+
+# --- Node ---
+node_modules/
+
+# --- OS / エディタ ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.idea/
+.vscode/
